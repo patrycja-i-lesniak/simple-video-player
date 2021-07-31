@@ -5,8 +5,12 @@ const createPlayer = () => {
     const togglePlay = () => {
         if(video.paused) {
             video.play();
+            play.classList.remove("fa-play");                   // 8a.
+            play.classList.add("fa-pause");
         } else {
             video.pause();
+            play.classList.remove("fa-pause");                   // 8a.
+            play.classList.add("fa-play");
         }
     }
 
