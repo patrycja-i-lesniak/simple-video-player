@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/videoPlayer.css">
+    <link rel="stylesheet" href="js/script.js">
+    <script defer src="js/script.js"></script>
+    <title>Simple video player in JavaScript</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1 class="header">
+            Simple video player in Java Script
+        </h1>
+
+        <div class="videoPlayer js-videoPlayer">
+            <video class="videoPlayer__video js-video" src="media/video.mp4" controls></video>
+
+            <div class="videoPlayer__timeline js-timeline">
+                <div class="videoPlayer__controls js-controls">
+                    <span class="videoPlayer__icon js-icon">
+                        <span class="material-icons">
+                            play_arrow
+                        </span>
+                    </span>
+                </div>
+                <div class="videoplayer__constols js-controls">
+                    <span class="videoplayer__time js-time">00:00</span>/
+                    <span class="videoplayer__duration js-duration">00:00</span>
+                </div>
+                <div class="videoPlayer__progress js-progress"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
